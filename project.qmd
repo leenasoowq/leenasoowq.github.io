@@ -1,0 +1,21 @@
+---
+title: "Project"
+---
+
+Here are some of the projects I worked on over my course of study. 
+
+# 1. Object-Oriented Programming
+
+{{< video img/OOP.mp4 >}}
+
+This was a game that my team and I built from the game engine to the game itself. The theme of this game is about space which allows players to use this game for educational purposes where they get to learn more about the space. In this project, my main task was to work on the scenes including of the management, rendering and transitioning.
+
+**Difficulty Level:** ★★★★☆
+
+# 2. Web Systems and Technologies
+
+{{< video img/WEBSYS.mp4 >}}
+
+For this module, my team and I built a movie review webpage where users can create an account using Google or the traditional signin and signup. The users get to review the movies on our platform where they can also access their profile where they can see, edit and delete the reviews they made on any movie. The movies will constantly be refreshed to match up with the current movie trends.
+
+**Difficulty Level:** ★★★

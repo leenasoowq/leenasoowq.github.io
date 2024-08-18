@@ -1,0 +1,52 @@
+---
+title: "About Me"
+author: "Leena Soo Wei Qi"
+format: html
+css: style.css
+---
+
+<div class="content">
+
+# Introduction
+
+![](img/me.jpg){height=300 height=auto}
+
+Hello! My name is Leena Soo. I am currently a student in Singapore Institute of Technology pursuing a degree in Applied Artificial Intelligence. 
+
+## Education
+
+I completed my O'Levels in 2018 and went to Singapore Polytechnic to pursue a Diploma in Bioengineering and graduated in 2022. 
+
+## Career
+
+After finishing my studies, I took a gap year to worked with Biosensors, a company specialised in building catheters as an Assistant Research and Design Engineer. I really enjoyed my time there where I get to witness the behind the scene of building something for the inert of body, how precise we had to be. As much as engineering is my forte, I do still want to continue my studies in something that the world is currently moving towards to which is technology. Hence, I made a decision to continue my studies, Degree in Applied Artificial Intelligence. 
+
+![](img/biosensors.jpg){height=300 height=auto}
+
+## Interests and Hobbies
+
+As a curious individual, I am never afraid to try new things. A few years back, I was very involved with powerlifting where I get the satisfactory whenever I hit my personal best. In recent years, I have gotten really fond of rockclimbing as well as travelling. Good scenery and food always calms the soul.
+
+<table>
+  <tr>
+    <td style="text-align:center;">
+      <img src="img/bambooforest.jpg" alt="Bamboo Forest" height="300">
+      <div>japan-Bamboo Forest</div>
+    </td>
+    <td style="text-align:center;">
+      <img src="img/taiwan.jpg" alt="Taiwan" height="300">
+      <div>Taiwan</div>
+    </td>
+  </tr>
+</table>
+
+## Contact
+
+Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/leenaswq/){target="_blank"} or drop me an E-mail at [leenaswq@gmail.com](https://www.gmail.com/){target="_blank"}
+
+
+---
+
+Thank you for taking the time to learn a bit about me!
+
+</div>
