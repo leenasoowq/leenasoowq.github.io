@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Hello I am Leena !",
     "section": "",
-    "text": "Hello! My name is Leena Soo. I am currently a student in Singapore Institute of Technology pursuing a degree in Applied Artificial Intelligence.\n\n\nI completed my O’Levels in 2018 and went to Singapore Polytechnic to pursue a Diploma in Bioengineering and graduated in 2022.\n\n\n\nAfter finishing my studies, I took a gap year to worked with Biosensors, a company specialised in building catheters as an Assistant Research and Design Engineer. I really enjoyed my time there where I get to witness the behind the scene of building something for the inert of body, how precise we had to be. As much as engineering is my forte, I do still want to continue my studies in something that the world is currently moving towards to which is technology. Hence, I made a decision to continue my studies, Degree in Applied Artificial Intelligence.\n\n\n\n\nAs a curious individual, I am never afraid to try new things. A few years back, I was very involved with powerlifting where I get the satisfactory whenever I hit my personal best. In recent years, I have gotten really fond of rockclimbing as well as travelling. Good scenery and food always calms the soul.\n\n\n\n\n\njapan-Bamboo Forest\n\n\n\n\n\nTaiwan\n\n\n\n\n\n\n\nFeel free to reach out to me via LinkedIn or drop me an E-mail at leenaswq@gmail.com\n\nThank you for taking the time to learn a bit about me!"
+    "text": "A full time university student on a quest to master the art of Artificial Intelligence. When I’m not busy convincing my code to run without breaking, you can find me capturing the world through my camera lens—because if AI doesn’t take over, at least I’ll have some great photos to document it! My life is a fine balance between training neural networks and training myself to survive on minimal sleep. Join me on this adventure where the only thing more complex than AI algorithms is figuring out how to frame the perfect picture!\nLinkedIn    Email"
   },
   {
     "objectID": "temp_website/index.html",
@@ -65,15 +65,29 @@
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "About Me",
-    "section": "",
-    "text": "I completed my O’Levels in 2018 and went to Singapore Polytechnic to pursue a Diploma in Bioengineering and graduated in 2022."
+    "title": "Hello I am Leena !",
+    "section": "Education",
+    "text": "Education\nSingapore Institute of Technology, SIT | Singapore Bachelor’s Degree in Applied Artificial Intelligence | Aug 2023 - present\nSingapore Polytechnic, SP | Singapore Diploma in Bioengineering | April 2019 - May 2022"
   },
   {
     "objectID": "project.html",
     "href": "project.html",
     "title": "Project",
     "section": "",
-    "text": "Here are some of the projects I worked on over my course of study.\n\n1. Object-Oriented Programming\n\nThis was a game that my team and I built from the game engine to the game itself. The theme of this game is about space which allows players to use this game for educational purposes where they get to learn more about the space. In this project, my main task was to work on the scenes including of the management, rendering and transitioning.\nDifficulty Level: ★★★★☆\n\n\n2. Web Systems and Technologies\n\nFor this module, my team and I built a movie review webpage where users can create an account using Google or the traditional signin and signup. The users get to review the movies on our platform where they can also access their profile where they can see, edit and delete the reviews they made on any movie. The movies will constantly be refreshed to match up with the current movie trends.\nDifficulty Level: ★★★"
+    "text": "This was a game that my team and I built from the game engine to the game itself. The theme of this game is about space which allows players to use this game for educational purposes where they get to learn more about the space. In this project, my main task was to work on the scenes including of the management, rendering and transitioning.\nDifficulty Level: ★★★★☆"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Hello I am Leena !",
+    "section": "Experience",
+    "text": "Experience\nNew Valve Technology Singapore (Biosensors) | Assistant R&D Engineer | Aug 2022 - Aug 2023 BMEC.asia | Service Sales Intern | Sept 2021 - Feb 2022"
+  },
+  {
+    "objectID": "project.html#more-on-the-way",
+    "href": "project.html#more-on-the-way",
+    "title": "Project",
+    "section": "More on the way…",
+    "text": "More on the way…"
   }
 ]

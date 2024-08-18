@@ -3,17 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "Profile"
+  title: "Leena Soo"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: About
       - project.qmd
         
 
 format:
   html:
-    theme: cosmo
+    theme: jolla
     css: styles.css
     toc: true
 

@@ -1,52 +1,36 @@
 ---
-title: "About Me"
-author: "Leena Soo Wei Qi"
+title: "Hello I am Leena !"
+about:
+  template: jolla
+  image: img/me.jpg
 format: html
 css: style.css
 ---
 
-<div class="content">
+A full time university student on a quest to master the art of Artificial Intelligence. When I'm not busy convincing my code to run without breaking, you can find me capturing the world through my camera lens—because if AI doesn't take over, at least I'll have some great photos to document it! My life is a fine balance between training neural networks and training myself to survive on minimal sleep. Join me on this adventure where the only thing more complex than AI algorithms is figuring out how to frame the perfect picture!
 
-# Introduction
+<a href="https://www.linkedin.com/in/leenaswq/" class="btn btn-outline-dark btn-sm" role="button">
+  <i class="fab fa-linkedin"></i> LinkedIn
+</a>
+<a href="mailto:leenaswq@gmail.com" class="btn btn-outline-dark btn-sm" role="button">
+  <i class="fas fa-envelope"></i> Email
+</a>
 
-![](img/me.jpg){height=300 height=auto}
+<hr>
 
-Hello! My name is Leena Soo. I am currently a student in Singapore Institute of Technology pursuing a degree in Applied Artificial Intelligence. 
+:::{#hero-heading}
 
 ## Education
 
-I completed my O'Levels in 2018 and went to Singapore Polytechnic to pursue a Diploma in Bioengineering and graduated in 2022. 
+Singapore Institute of Technology, SIT | Singapore
+Bachelor's Degree in Applied Artificial Intelligence | Aug 2023 - present
 
-## Career
+Singapore Polytechnic, SP | Singapore
+Diploma in Bioengineering | April 2019 - May 2022
 
-After finishing my studies, I took a gap year to worked with Biosensors, a company specialised in building catheters as an Assistant Research and Design Engineer. I really enjoyed my time there where I get to witness the behind the scene of building something for the inert of body, how precise we had to be. As much as engineering is my forte, I do still want to continue my studies in something that the world is currently moving towards to which is technology. Hence, I made a decision to continue my studies, Degree in Applied Artificial Intelligence. 
+## Experience 
 
-![](img/biosensors.jpg){height=300 height=auto}
+New Valve Technology Singapore (Biosensors) | Assistant R&D Engineer | Aug 2022 - Aug 2023
+BMEC.asia | Service Sales Intern | Sept 2021 - Feb 2022
 
-## Interests and Hobbies
-
-As a curious individual, I am never afraid to try new things. A few years back, I was very involved with powerlifting where I get the satisfactory whenever I hit my personal best. In recent years, I have gotten really fond of rockclimbing as well as travelling. Good scenery and food always calms the soul.
-
-<table>
-  <tr>
-    <td style="text-align:center;">
-      <img src="img/bambooforest.jpg" alt="Bamboo Forest" height="300">
-      <div>japan-Bamboo Forest</div>
-    </td>
-    <td style="text-align:center;">
-      <img src="img/taiwan.jpg" alt="Taiwan" height="300">
-      <div>Taiwan</div>
-    </td>
-  </tr>
-</table>
-
-## Contact
-
-Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/leenaswq/){target="_blank"} or drop me an E-mail at [leenaswq@gmail.com](https://www.gmail.com/){target="_blank"}
-
-
----
-
-Thank you for taking the time to learn a bit about me!
-
-</div>
+:::
