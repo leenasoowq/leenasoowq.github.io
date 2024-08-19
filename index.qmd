@@ -3,22 +3,20 @@ title: "Hello I am Leena !"
 about:
   template: jolla
   image: img/me.jpg
-format: html
-css: style.css
 ---
 
 A full time university student on a quest to master the art of Artificial Intelligence. When I'm not busy convincing my code to run without breaking, you can find me capturing the world through my camera lens—because if AI doesn't take over, at least I'll have some great photos to document it! My life is a fine balance between training neural networks and training myself to survive on minimal sleep. Join me on this adventure where the only thing more complex than AI algorithms is figuring out how to frame the perfect picture!
 
-<a href="https://www.linkedin.com/in/leenaswq/" class="btn btn-outline-dark btn-sm" role="button">
-  <i class="fab fa-linkedin"></i> LinkedIn
-</a>
-<a href="mailto:leenaswq@gmail.com" class="btn btn-outline-dark btn-sm" role="button">
-  <i class="fas fa-envelope"></i> Email
-</a>
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/leenaswq/" class="btn btn-outline-dark btn-sm" role="button" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="mailto:leenaswq@gmail.com" class="btn btn-outline-dark btn-sm" role="button">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+</div>
 
 <hr>
-
-:::{#hero-heading}
 
 ## Education
 
@@ -33,4 +31,3 @@ Diploma in Bioengineering | April 2019 - May 2022
 New Valve Technology Singapore (Biosensors) | Assistant R&D Engineer | Aug 2022 - Aug 2023
 BMEC.asia | Service Sales Intern | Sept 2021 - Feb 2022
 
-:::

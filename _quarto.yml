@@ -16,6 +16,7 @@ format:
     theme: jolla
     css: styles.css
     toc: true
+    include-after-body: _footer.html
 
 
 

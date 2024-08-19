@@ -10,6 +10,9 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
@@ -48,4 +51,24 @@ a:hover {
 
 .btn:hover {
   background-color: var(--secondary-color);
+}
+
+main {
+  flex: 1;
+}
+
+.social-links {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+hr {
+  margin: 30px 0;
 }
