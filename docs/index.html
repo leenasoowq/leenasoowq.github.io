@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Leena Soo - Hello I am Leena !</title>
+<title>Leena Soo - Hello I am Leena!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,28 +121,63 @@ ul.task-list li input[type="checkbox"] {
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello I am Leena !</h1>
+<h1 class="title">Hello I am Leena!</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
 
+<script>
+console.log('JS file loaded');
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll(".slide-in");
+  const elementInView = (el, percentageScroll = 100) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <=
+      ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100))
+    );
+  };
+  const displayScrollElement = (element) => {
+    element.classList.add("visible");
+  };
+  const hideScrollElement = (element) => {
+    element.classList.remove("visible");
+  };
+  const handleScrollAnimation = () => {
+    elements.forEach((el) => {
+      if (elementInView(el, 90)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+  window.addEventListener("scroll", () => {
+    handleScrollAnimation();
+  });
+});
+</script>
+<div class="slide-in">
 <p>A full time university student on a quest to master the art of Artificial Intelligence. When I’m not busy convincing my code to run without breaking, you can find me capturing the world through my camera lens—because if AI doesn’t take over, at least I’ll have some great photos to document it! My life is a fine balance between training neural networks and training myself to survive on minimal sleep. Join me on this adventure where the only thing more complex than AI algorithms is figuring out how to frame the perfect picture!</p>
+</div>
+<div class="slide-in">
 <div class="social-links">
 <p><a href="https://www.linkedin.com/in/leenaswq/" class="btn btn-outline-dark btn-sm" role="button" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin"></i> LinkedIn </a> <a href="mailto:leenaswq@gmail.com" class="btn btn-outline-dark btn-sm" role="button"> <i class="fas fa-envelope"></i> Email </a></p>
 </div>
+</div>
 <hr>
-<section id="education" class="level2">
+<section id="education" class="level2 slide-in">
 <h2 data-anchor-id="education">Education</h2>
 <p>Singapore Institute of Technology, SIT | Singapore Bachelor’s Degree in Applied Artificial Intelligence | Aug 2023 - present</p>
 <p>Singapore Polytechnic, SP | Singapore Diploma in Bioengineering | April 2019 - May 2022</p>
 </section>
-<section id="experience" class="level2">
+<section id="experience" class="level2 slide-in">
 <h2 data-anchor-id="experience">Experience</h2>
 <p>New Valve Technology Singapore (Biosensors) | Assistant R&amp;D Engineer | Aug 2022 - Aug 2023 BMEC.asia | Service Sales Intern | Sept 2021 - Feb 2022</p>
-
-
 </section>
+
+
 </main>  
 </div>
  <!-- /main -->

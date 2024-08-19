@@ -1,12 +1,52 @@
 ---
-title: "Hello I am Leena !"
+title: Hello I am Leena!
 about:
   template: jolla
   image: img/me.jpg
 ---
 
-A full time university student on a quest to master the art of Artificial Intelligence. When I'm not busy convincing my code to run without breaking, you can find me capturing the world through my camera lens—because if AI doesn't take over, at least I'll have some great photos to document it! My life is a fine balance between training neural networks and training myself to survive on minimal sleep. Join me on this adventure where the only thing more complex than AI algorithms is figuring out how to frame the perfect picture!
+<script>
+console.log('JS file loaded');
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll(".slide-in");
 
+  const elementInView = (el, percentageScroll = 100) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <=
+      ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100))
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add("visible");
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove("visible");
+  };
+
+  const handleScrollAnimation = () => {
+    elements.forEach((el) => {
+      if (elementInView(el, 90)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+
+  window.addEventListener("scroll", () => {
+    handleScrollAnimation();
+  });
+});
+</script>
+
+<div class="slide-in">
+A full time university student on a quest to master the art of Artificial Intelligence. When I'm not busy convincing my code to run without breaking, you can find me capturing the world through my camera lens—because if AI doesn't take over, at least I'll have some great photos to document it! My life is a fine balance between training neural networks and training myself to survive on minimal sleep. Join me on this adventure where the only thing more complex than AI algorithms is figuring out how to frame the perfect picture!
+</div>
+
+<div class="slide-in">
 <div class="social-links">
   <a href="https://www.linkedin.com/in/leenaswq/" class="btn btn-outline-dark btn-sm" role="button" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-linkedin"></i> LinkedIn
@@ -15,19 +55,25 @@ A full time university student on a quest to master the art of Artificial Intell
     <i class="fas fa-envelope"></i> Email
   </a>
 </div>
+</div>
 
 <hr>
 
+<div class="slide-in">
 ## Education
+  
+  Singapore Institute of Technology, SIT | Singapore
+  Bachelor's Degree in Applied Artificial Intelligence | Aug 2023 - present
+  
+  Singapore Polytechnic, SP | Singapore
+  Diploma in Bioengineering | April 2019 - May 2022
+</div>
 
-Singapore Institute of Technology, SIT | Singapore
-Bachelor's Degree in Applied Artificial Intelligence | Aug 2023 - present
 
-Singapore Polytechnic, SP | Singapore
-Diploma in Bioengineering | April 2019 - May 2022
 
+<div class="slide-in">
 ## Experience 
-
-New Valve Technology Singapore (Biosensors) | Assistant R&D Engineer | Aug 2022 - Aug 2023
-BMEC.asia | Service Sales Intern | Sept 2021 - Feb 2022
-
+  
+  New Valve Technology Singapore (Biosensors) | Assistant R&D Engineer | Aug 2022 - Aug 2023
+  BMEC.asia | Service Sales Intern | Sept 2021 - Feb 2022
+</div>
