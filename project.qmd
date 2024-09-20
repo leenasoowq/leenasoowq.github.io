@@ -8,7 +8,9 @@ title: "Project"
 {{< video img/OOP.mp4 >}}
 
 • Spent 3 months developing a functional end to end game engine and built an education game on top of the engine using Java
+
 • Designed UML diagrams to model the engine’s structure 
+
 • Gained experience with game development concepts 
 
 # 2. Better Village - Web Systems and Technologies
@@ -16,8 +18,11 @@ title: "Project"
 {{< video img/WEBSYS.mp4 >}}
 
 • Developed a movie review website using PHP, HTML, CSS, JavaScript, and MySQL 
+
 • Implemented core features including user authentication using PHPMailer, password reset functionality, movie database, user review system 
+
 • Conducted accessibility testing using Axe DevTools
+
 • Followed W3C standards for markup validation 
 
 # 3. Education Statistics - Data Visualisation 
@@ -28,6 +33,9 @@ knitr::include_url("docs/interactive.html")
 
 ![Project Poster](docs/project_poster.png)
 • Developed an interactive data visualization project using R and various libraries including ggplot2, plotly, and tidyr 
+
 • Implemented data cleaning techniques including pivoting tables, handling missing values, and data type conversions 
+
 • Utilized ggplot2 and plotly to create visually appealing and informative charts with custom color palettes 
+
 • Demonstrated proficiency in R programming, data manipulation, and creating publication-ready visualizations 

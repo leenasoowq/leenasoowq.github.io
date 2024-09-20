@@ -1,0 +1,209 @@
+---
+title: "Interactive plots"
+format:
+  html:
+      toc-title: Table of contents
+      toc: true
+      toc-depth: 2
+      number-sections: true
+      highlight-style: github
+      cap-location: top
+      page-layout: full
+      embed-resources: true
+      self-contained-math: true
+      toc-expand: true
+---
+# Libraries
+```{r, warning = FALSE}
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(tidyr))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(plotly))
+suppressPackageStartupMessages(library(readxl))
+suppressPackageStartupMessages(library(tibble))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(htmlwidgets))
+```
+
+# Data cleaning and Transformation
+
+## Reading in data
+```{r setup, echo=TRUE, results = "hide"}
+suppressMessages(df <- read_excel("Education Statistics Digest 2023-Statistical Tables.xlsx", sheet = "46"))
+
+```
+
+```{r}
+knitr::kable(df)
+```
+
+## Remove unnecessary rows and columns
+```{r}
+df <- read_excel("Education Statistics Digest 2023-Statistical Tables.xlsx", sheet = "46", skip = 1, n_max = 5)
+df <- df[ , -2]
+```
+
+## Pitvot table and change Year datatype to Int
+```{r}
+# Convert to long format
+df_long <- df |>
+  pivot_longer(cols = -`Ethnic Group`, names_to = "Year", values_to = "Percentage")
+
+# Ensure Year is integer
+df_long$Year <- as.integer(df_long$Year)
+```
+
+## Check for mising values 
+```{r}
+sapply(df_long, function(x) sum(is.na(x)))
+knitr::kable(df_long)
+```
+
+# Data Visualisation
+
+## Colour Palette
+```{r}
+dark_color_palette <- c(
+  "#009E73",  
+  "#F5C710",  
+  "#0072B2", 
+  "#D55E00",  
+  "#CC79A7"
+)
+```
+
+## Improvement 1
+```{r}
+# Create the plot
+p <- ggplot(df_long, aes(x = Year, y = Percentage, color = `Ethnic Group`, group = `Ethnic Group`)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    title = "Percentage of O-Level Students Who Progressed To Post-Secondary Education",
+    x = "Year",
+    y = "Percentage",
+    color = "Ethnic Group") +
+  scale_color_manual(values = dark_color_palette) +
+  scale_x_continuous(breaks = unique(df_long$Year)) +
+  theme_minimal()
+
+# Convert to plotly object for interactivity
+p_interactive <- ggplotly(p, tooltip = c("x", "y", "color"))
+
+p_interactive <- p_interactive %>%
+  layout(
+    hoverlabel = list(
+      font = list(
+        size = 14,
+        family = "Arial",
+        color = "white"
+      ),
+      bordercolor = "black" 
+    ),
+    annotations = list(
+      list(
+        x = -0.05,
+        y = -0.1,
+        xref = 'paper',
+        yref = 'paper',
+        text = "Source: Ministry of Education Singapore",
+        showarrow = FALSE,
+        font = list(
+          size = 12,
+          family = "Arial",
+          color = "black"
+        ),
+        align = "left"
+      )
+    )
+  )
+
+# Display the plot
+p_interactive
+```
+
+- Y-axis is scaled to be able to see differences more clearly
+
+- Interactive plot to hover over data point to see more information
+
+- legend outside the plot area to maximise the space for the data visualization
+
+- X-axis is labelled
+
+## Improvement 2
+
+```{r}
+# Create the main plot with Plotly
+main_plot <- plot_ly(
+  data = df_long,
+  x = ~Year,
+  y = ~Percentage,
+  color = ~`Ethnic Group`,
+  colors = dark_color_palette,
+  type = 'scatter',
+  mode = 'lines+markers',
+  text = ~paste("Year:", Year, "<br>Percentage:", Percentage, "<br>Group:", `Ethnic Group`),
+  hoverinfo = "text"
+) %>% layout(
+  yaxis = list(
+    range = c(0, 100),
+    tickvals = c(0, 25, 50, 75, 100),
+    title = "Percentage"
+  ),
+  xaxis = list(
+    tickvals = unique(df_long$Year),  # Set the tick values to unique years
+    ticktext = as.character(unique(df_long$Year)),
+    title = "Year"
+  ),
+  title = "Percentage of O-Level Students Who Progressed to Post-Secondary Education",
+  legend = list(title = list(text = "Ethnic Group")),
+  annotations = list(
+    list(
+      x = 0,
+      y = -0.2,
+      xref = 'paper',
+      yref = 'paper',
+      text = "Source: Ministry of Education Singapore",
+      showarrow = FALSE,
+      font = list(
+        size = 12,
+        family = "Arial",
+        color = "black"
+      ),
+      align = "left"
+    )
+  ),
+  margin = list(b = 100)  # Increase the bottom margin
+)
+
+# Add custom JavaScript for click zoom into point
+main_plot <- main_plot %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      el.on('plotly_click', function(d) {
+        var point = d.points[0];
+        if (point) {
+          var yValue = point.y;
+          var yBinRange = 30; // Define the bin range for y-axis
+          var xBinRange = 1.5; // Define the bin range for x-axis to show 5 years
+          var update = {
+            'xaxis.range': [point.x - xBinRange, point.x + xBinRange], // Show 5 years around the clicked point
+            'yaxis.range': [yValue - yBinRange, yValue + yBinRange]
+          };
+          Plotly.relayout(el, update);
+        }
+      });
+    }
+  ")
+
+main_plot
+
+```
+- Y-Axis starts from 0 to not mislead audience
+
+- Increase number of bins on Y-Axis for visibility
+
+- Interactive plot for visibility on click
+
+- legend outside the plot area to maximise the space for the data visualization
+- X-axis is labelled
