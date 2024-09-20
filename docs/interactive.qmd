@@ -2,17 +2,18 @@
 title: "Interactive plots"
 format:
   html:
-      toc-title: Table of contents
-      toc: true
-      toc-depth: 2
-      number-sections: true
-      highlight-style: github
-      cap-location: top
-      page-layout: full
-      embed-resources: true
-      self-contained-math: true
-      toc-expand: true
+    embed-resources: true
+    self-contained: true
+    theme: none
+    css: styles.css
+    include-in-header:
+      text: |
+        <style>
+        body { padding: 0; margin: 0; }
+        .cell-output-display { overflow: auto; }
+        </style>
 ---
+
 # Libraries
 ```{r, warning = FALSE}
 suppressPackageStartupMessages(library(ggplot2))

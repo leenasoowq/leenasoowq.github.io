@@ -27,9 +27,7 @@ title: "Project"
 
 # 3. Education Statistics - Data Visualisation 
 
-```{r echo=FALSE}
-knitr::include_url("docs/interactive.html")
-```
+<iframe src="docs/interactive.html" style="width: 100%; height: 600px; border: none;"></iframe>
 
 ![Project Poster](docs/project_poster.png)
 • Developed an interactive data visualization project using R and various libraries including ggplot2, plotly, and tidyr 
