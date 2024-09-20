@@ -1,21 +1,33 @@
 ---
 title: "Project"
+
 ---
 
-# 1. Object-Oriented Programming
+# 1. Space Odyssey - Object-Oriented Programming
 
 {{< video img/OOP.mp4 >}}
 
-This was a game that my team and I built from the game engine to the game itself. The theme of this game is about space which allows players to use this game for educational purposes where they get to learn more about the space. In this project, my main task was to work on the scenes including of the management, rendering and transitioning.
+• Spent 3 months developing a functional end to end game engine and built an education game on top of the engine using Java
+• Designed UML diagrams to model the engine’s structure 
+• Gained experience with game development concepts 
 
-**Difficulty Level:** ★★★★☆
-
-# 2. Web Systems and Technologies
+# 2. Better Village - Web Systems and Technologies
 
 {{< video img/WEBSYS.mp4 >}}
 
-For this module, my team and I built a movie review webpage where users can create an account using Google or the traditional signin and signup. The users get to review the movies on our platform where they can also access their profile where they can see, edit and delete the reviews they made on any movie. The movies will constantly be refreshed to match up with the current movie trends.
+• Developed a movie review website using PHP, HTML, CSS, JavaScript, and MySQL 
+• Implemented core features including user authentication using PHPMailer, password reset functionality, movie database, user review system 
+• Conducted accessibility testing using Axe DevTools
+• Followed W3C standards for markup validation 
 
-**Difficulty Level:** ★★★
+# 3. Education Statistics - Data Visualisation 
 
-## More on the way...
+```{r echo=FALSE}
+knitr::include_url("docs/interactive.html")
+```
+
+![Project Poster](docs/project_poster.png)
+• Developed an interactive data visualization project using R and various libraries including ggplot2, plotly, and tidyr 
+• Implemented data cleaning techniques including pivoting tables, handling missing values, and data type conversions 
+• Utilized ggplot2 and plotly to create visually appealing and informative charts with custom color palettes 
+• Demonstrated proficiency in R programming, data manipulation, and creating publication-ready visualizations 
