@@ -47,26 +47,13 @@ function App() {
   ];
   const projects = [
     {
-      title: "3D Printing Failure Detection",
-      description: "Computer vision system using YOLOv8 to detect 3D printing failures in real-time",
-      tags: ["Python", "OpenCV", "YOLOv8"],
-      // githubLink: "https://github.com/yourusername/3d-printing-detection",
-      // demoLink: "#" 
-    },
-    {
       title: "PV Generation Prediction",
       description: "Time series forecasting model for solar panel energy output using Temporal Fusion Transformer",
       tags: ["TensorFlow", "LSTM", "TFT"],
       // githubLink: "https://github.com/yourusername/pv-prediction",
       // demoLink: "#"
     },
-    // {
-    //   title: "Medical Image Segmentation",
-    //   description: "U-Net architecture for segmenting tumors in MRI scans",
-    //   tags: ["PyTorch", "Medical Imaging", "UNet"],
-    //   githubLink: "https://github.com/yourusername/medical-segmentation",
-    //   demoLink: "#"
-    // }
+  
     {
       title: "Defect Detection with White Light Interferometry",
       description: "Developed a computer vision system to detect defects in wafers using white light interferometry",
@@ -269,11 +256,7 @@ function App() {
                   <li>Specialisation in Biomedical Engineering</li>
                   <li>Relevant coursework: Diagnostic Imaging Machines, Prosthetics, Medical Robots</li>
                 </ul>
-                {/* <div className="education-tags">
-                  <span className="tag">Python</span>
-                  <span className="tag">Java</span>
-                  <span className="tag">Algorithms</span>
-                </div> */}
+             
               </div>
             </div>
           </div>
