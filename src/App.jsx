@@ -47,13 +47,6 @@ function App() {
   ];
   const projects = [
     {
-      title: "3D Printing Failure Detection",
-      description: "Computer vision system using YOLOv8 to detect 3D printing failures in real-time",
-      tags: ["Python", "OpenCV", "YOLOv8"],
-      // githubLink: "https://github.com/yourusername/3d-printing-detection",
-      // demoLink: "#" 
-    },
-    {
       title: "PV Generation Prediction",
       description: "Time series forecasting model for solar panel energy output using Temporal Fusion Transformer",
       tags: ["TensorFlow", "LSTM", "TFT"],
