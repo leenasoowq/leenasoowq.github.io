@@ -53,13 +53,7 @@ function App() {
       // githubLink: "https://github.com/yourusername/pv-prediction",
       // demoLink: "#"
     },
-    // {
-    //   title: "Medical Image Segmentation",
-    //   description: "U-Net architecture for segmenting tumors in MRI scans",
-    //   tags: ["PyTorch", "Medical Imaging", "UNet"],
-    //   githubLink: "https://github.com/yourusername/medical-segmentation",
-    //   demoLink: "#"
-    // }
+  
     {
       title: "Defect Detection with White Light Interferometry",
       description: "Developed a computer vision system to detect defects in wafers using white light interferometry",
@@ -262,11 +256,7 @@ function App() {
                   <li>Specialisation in Biomedical Engineering</li>
                   <li>Relevant coursework: Diagnostic Imaging Machines, Prosthetics, Medical Robots</li>
                 </ul>
-                {/* <div className="education-tags">
-                  <span className="tag">Python</span>
-                  <span className="tag">Java</span>
-                  <span className="tag">Algorithms</span>
-                </div> */}
+             
               </div>
             </div>
           </div>
